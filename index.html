@@ -1,0 +1,747 @@
+<!doctype html>
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background:rgba(0, 0, 0, 0.6) ;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(0, 0, 0, 0.6) ;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="pt-5  bg-zinc-900 selection:bg-sky-100 selection:text-sky-600">
+
+ 
+    <header>
+        <div class="absolute top-2 right-0 left-0 z-40 pt-14">
+            <div class="mx-auto max-w-7xl px-9 ">
+                <div class="mx-auto max-w-2xl lg:max-w-none">
+                    <div class="flex items-center justify-between">
+                        <a aria-label="Home" href="/" class=" justify-center items-center gap-x-3">
+                      
+
+                            <svg aria-hidden="true" class="h-10 " viewBox="0 0 630 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M1 286H47L164 82.5L312 339.5L313 341.5L314 339.5L463.5 78.5L582.5 286H628.5L463.5 1H361.5L262.5 173L165 3H163L1 286ZM285 211.5L312 259H314L440 40.5H384.5L285 211.5Z" fill="#111111"/>
+                                <path d="M47 286V286.5H47.2893L47.4335 286.249L47 286ZM1 286L0.566067 285.752L0.137655 286.5H1V286ZM164 82.5L164.433 82.2505L164 81.4975L163.567 82.2508L164 82.5ZM312 339.5L312.447 339.276L312.441 339.263L312.433 339.25L312 339.5ZM313 341.5L312.553 341.724L313 342.618L313.447 341.724L313 341.5ZM314 339.5L313.566 339.251L313.559 339.264L313.553 339.276L314 339.5ZM463.5 78.5L463.934 78.2513L463.5 77.4945L463.066 78.2515L463.5 78.5ZM582.5 286L582.066 286.249L582.21 286.5H582.5V286ZM628.5 286V286.5H629.367L628.933 285.749L628.5 286ZM463.5 1L463.933 0.749482L463.788 0.5H463.5V1ZM361.5 1V0.5H361.211L361.067 0.750575L361.5 1ZM262.5 173L262.066 173.249L262.499 174.004L262.933 173.249L262.5 173ZM165 3L165.434 2.75124L165.29 2.5H165V3ZM163 3V2.5H162.71L162.566 2.7516L163 3ZM312 259L311.565 259.247L311.709 259.5H312V259ZM285 211.5L284.568 211.249L284.423 211.497L284.565 211.747L285 211.5ZM314 259V259.5H314.289L314.433 259.25L314 259ZM440 40.5L440.433 40.7498L440.866 40H440V40.5ZM384.5 40.5V40H384.212L384.068 40.2485L384.5 40.5ZM47 285.5H1V286.5H47V285.5ZM163.567 82.2508L46.5665 285.751L47.4335 286.249L164.433 82.7492L163.567 82.2508ZM312.433 339.25L164.433 82.2505L163.567 82.7495L311.567 339.75L312.433 339.25ZM313.447 341.276L312.447 339.276L311.553 339.724L312.553 341.724L313.447 341.276ZM313.553 339.276L312.553 341.276L313.447 341.724L314.447 339.724L313.553 339.276ZM463.066 78.2515L313.566 339.251L314.434 339.749L463.934 78.7485L463.066 78.2515ZM582.934 285.751L463.934 78.2513L463.066 78.7487L582.066 286.249L582.934 285.751ZM628.5 285.5H582.5V286.5H628.5V285.5ZM463.067 1.25052L628.067 286.251L628.933 285.749L463.933 0.749482L463.067 1.25052ZM361.5 1.5H463.5V0.5H361.5V1.5ZM262.933 173.249L361.933 1.24942L361.067 0.750575L262.067 172.751L262.933 173.249ZM164.566 3.24876L262.066 173.249L262.934 172.751L165.434 2.75124L164.566 3.24876ZM163 3.5H165V2.5H163V3.5ZM1.43393 286.248L163.434 3.2484L162.566 2.7516L0.566067 285.752L1.43393 286.248ZM312.435 258.753L285.435 211.253L284.565 211.747L311.565 259.247L312.435 258.753ZM314 258.5H312V259.5H314V258.5ZM439.567 40.2502L313.567 258.75L314.433 259.25L440.433 40.7498L439.567 40.2502ZM384.5 41H440V40H384.5V41ZM285.432 211.751L384.932 40.7515L384.068 40.2485L284.568 211.249L285.432 211.751Z" fill="black"/>
+                                </svg>
+                                
+                                <span class=" text-2xl"><b>M</b>ak <b>A</b>ssociates </span>
+                            
+                        
+                        </a>
+                        <div class="sm:flex items-center gap-x-8 hidden"><a
+                                class="inline-flex gap-x-2  items-center rounded-full px-4 py-1.5 text-sm font-semibold transition text-sky-600
+                                "
+                                href="#contact-us">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20"  viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M20 4a2 2 0 0 1 1.995 1.85L22 6v12a2 2 0 0 1-1.85 1.995L20 20H4a2 2 0 0 1-1.995-1.85L2 18v-1h2v1h16V7.414l-6.94 6.94a1.5 1.5 0 0 1-2.007.103l-.114-.103L4 7.414V8H2V6a2 2 0 0 1 1.85-1.995L4 4zM6 13a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2zm12.586-7H5.414L12 12.586zM5 10a1 1 0 0 1 .117 1.993L5 12H2a1 1 0 0 1-.117-1.993L2 10z"/></g></svg>
+                                 <span class="relative top-px underline">Contact us</span>
+
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="relative   flex-auto overflow-hidden bg-white pt-14"  style="border-top-left-radius: 30px; border-top-right-radius: 30px; transform: none; transform-origin: 50% 50% 0px;"
+       >
+
+       
+        <div class="relative isolate flex w-full flex-col p-10" style="transform: none; transform-origin: 50% 50% 0px;">
+            <div id="grid-container" class="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full"></div>
+         
+            <main class="w-full flex-auto">
+
+
+
+                <div class="mx-auto max-w-7xl  mt-24 sm:mt-32 md:mt-56">
+                    <div class="mx-auto max-w-2xl lg:max-w-none">
+                        <div class="max-w-3xl" style="opacity: 1; transform: none;">
+                            <h1
+                                class="font-display text-5xl font-medium tracking-tight [text-wrap:balance] text-neutral-950 sm:text-7xl">
+                                Investir intelligemment
+                                Réussir ensemble</h1>
+                            <p class="mt-6 text-xl text-neutral-600">Une société de conseil financier et capital humain,
+                                spécialisée dans l’accompagnement des entreprises dans leur stratégie de développement.
+                            </p>
+                            <p class="mt-3 text-xl text-neutral-600">
+                                Nous offrons des services personnalisés et adaptés aux besoins spécifiques de nos
+                                clients, en mettant l’accent sur l’excellence technique, la diversité, et un fort
+                                engagement au service de nos clients
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+              
+                 
+                <!-- features -->
+                <div class="mx-auto max-w-7xl  mt-24 sm:mt-32 lg:mt-40">
+                      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                        <div class="col-span-2">
+                          <h2 class="text-base/7 font-semibold text-sky-600">Everything you need</h2>
+                          <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">All-in-one platform</p>
+                          <p class="mt-6 text-base/7 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        </div>
+                        <dl class="col-span-3 grid grid-cols-1 gap-x-8 gap-y-10 text-base/7 text-gray-600 sm:grid-cols-2 lg:gap-y-16">
+                          <div class="relative ">
+                            <dt class="font-semibold text-gray-900">
+                              
+                              <span class="mb-3  flex w-fit shrink-0 rounded-full border border-sky-300 bg-sky-100 p-2 dark:border-sky-300/10 dark:bg-sky-400/10">
+                                <svg class="size-6 text-sky-600 dark:text-sky-500" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M15.964 2.047a5.4 5.4 0 0 1 1.42 0M19.9 3.088c.375.286.724.636 1.01 1.011m1.042 2.519c.063.47.063.947 0 1.417m-8.357-4.717c-2.151 2.038-2.07 5.22-.103 7.187c1.99 1.99 5.226 2.054 7.257-.172"/><path d="M10 3.32c-3.25-.497-6.326-.464-7.235.445c-2.172 2.172.66 16.729 3.77 16.426c1.706-.172 2.897-2.912 4.3-3.768c.551-.337 1.041.005 1.387.455l3.347 4.357c.583.759.994.985 1.873.535c1.352-.692 2.636-1.979 3.328-3.328c.45-.88.224-1.29-.535-1.873L18 14.852"/></g></svg>
+                              </span>
+                              
+                            Expertise
+                            </dt>
+                            <dd class="mt-2">Une expertise approfondie dans les domaines des Finances, et du Capital humain.</dd>
+                          </div>
+                          <div class="relative ">
+                            <dt class="font-semibold text-gray-900">
+                            
+                              
+                              <span class="mb-3  flex w-fit shrink-0 rounded-full border border-sky-300 bg-sky-100 p-2 dark:border-sky-300/10 dark:bg-sky-400/10">
+                                <svg class="size-6 text-sky-600 dark:text-sky-500" 
+                              xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16"><path fill="currentColor" d="M11.8 6.13a.683.683 0 0 0-.11-.973a.715.715 0 0 0-.992.108l-3.31 4.06l-1.77-1.36a.715.715 0 0 0-.994.089a.683.683 0 0 0 .09.975l2.32 1.81a.715.715 0 0 0 1.003-.1l3.76-4.62z"/><path fill="currentColor" fill-rule="evenodd" d="M6.51.714C7.044.322 7.311.126 7.6.05a1.6 1.6 0 0 1 .787 0c.292.076.56.272 1.09.664l.677.497c.185.136.278.204.378.257q.134.07.279.116c.109.033.222.05.449.085l.83.127c.655.1.982.151 1.24.304c.23.135.422.327.557.557c.153.26.203.588.304 1.24l.127.83c.035.227.052.341.085.45q.045.145.116.278c.054.1.121.193.257.378l.497.677c.392.534.588.801.664 1.09a1.6 1.6 0 0 1 0 .787c-.075.292-.272.56-.664 1.09l-.497.677a3 3 0 0 0-.257.378a1.6 1.6 0 0 0-.116.28c-.033.108-.05.221-.085.448l-.127.83c-.1.655-.151.982-.304 1.24c-.135.23-.327.421-.557.557c-.26.153-.588.203-1.24.304l-.83.127a3 3 0 0 0-.449.086q-.145.044-.279.116c-.1.053-.193.12-.378.257l-.677.497c-.534.392-.801.588-1.09.664a1.6 1.6 0 0 1-.787 0c-.292-.076-.56-.272-1.09-.664l-.677-.497a3 3 0 0 0-.378-.257a1.6 1.6 0 0 0-.279-.116a3 3 0 0 0-.449-.086l-.83-.127c-.655-.1-.983-.15-1.24-.304a1.6 1.6 0 0 1-.557-.557c-.153-.26-.203-.588-.304-1.24l-.127-.83c-.035-.227-.052-.34-.085-.449a1.5 1.5 0 0 0-.116-.279a3 3 0 0 0-.257-.378l-.497-.677c-.392-.534-.588-.8-.664-1.09a1.6 1.6 0 0 1 0-.787c.075-.292.272-.56.664-1.09l.497-.677c.136-.185.204-.278.257-.378q.07-.134.116-.279c.033-.109.05-.222.085-.449l.127-.83c.1-.655.151-.983.304-1.24c.135-.23.327-.42.557-.557c.26-.153.588-.203 1.24-.304l.83-.127c.227-.034.341-.052.449-.085q.145-.045.279-.116c.1-.053.193-.121.378-.257zm2.38.806l.711.522c.151.111.3.22.466.309q.22.117.456.189a4 4 0 0 0 .548.111l.872.134c.741.114.833.145.887.177q.127.076.202.202c.032.054.064.146.177.887l.134.872a4 4 0 0 0 .111.548q.073.238.189.456c.088.166.198.315.309.466l.522.711c.444.604.486.691.502.753a.6.6 0 0 1 0 .286c-.016.061-.058.148-.502.753l-.522.711c-.111.151-.221.3-.309.466a2.6 2.6 0 0 0-.189.456a4 4 0 0 0-.111.548l-.134.872c-.114.741-.145.833-.177.887a.6.6 0 0 1-.202.202c-.054.032-.146.064-.887.177l-.872.134a4 4 0 0 0-.548.111a2.6 2.6 0 0 0-.456.189c-.166.088-.315.198-.466.309l-.711.522c-.604.444-.691.486-.753.502a.6.6 0 0 1-.286 0c-.061-.016-.148-.058-.753-.502l-.711-.522a4 4 0 0 0-.466-.309a2.6 2.6 0 0 0-.456-.189a4 4 0 0 0-.548-.111l-.872-.134c-.741-.114-.833-.145-.887-.177a.6.6 0 0 1-.202-.202c-.032-.054-.064-.146-.177-.887l-.134-.872a4 4 0 0 0-.111-.548a2.6 2.6 0 0 0-.189-.456c-.088-.166-.198-.315-.309-.466l-.522-.711c-.444-.604-.486-.691-.502-.753a.6.6 0 0 1 0-.286c.016-.061.058-.148.502-.753l.522-.711c.111-.151.221-.3.309-.466q.116-.22.189-.456a4 4 0 0 0 .111-.548l.134-.872c.114-.741.145-.833.177-.887a.6.6 0 0 1 .202-.202c.054-.032.146-.064.887-.177l.872-.134a4 4 0 0 0 .548-.111q.238-.073.456-.189c.166-.088.315-.198.466-.309l.711-.522c.604-.444.691-.486.753-.502a.6.6 0 0 1 .286 0c.061.016.148.058.753.502" clip-rule="evenodd"/></svg>
+                              </span>
+                              
+                              
+                              Qualité
+                            </dt>
+                            <dd class="mt-2">Une approche personnalisée et service de haute qualité.</dd>
+                          </div>
+                          <div class="relative ">
+                            <dt class="font-semibold text-gray-900">
+                              <span class="mb-3  flex w-fit shrink-0 rounded-full border border-sky-300 bg-sky-100 p-2 dark:border-sky-300/10 dark:bg-sky-400/10">
+                                <svg class="size-6 text-sky-600 dark:text-sky-500" 
+                                xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M11 5h7m-8 5l4.5 4.5M5 11v7"/><circle cx="6.444" cy="6.444" r="4.444"/><circle cx="5" cy="20" r="2"/><circle cx="16" cy="16" r="2"/><circle cx="20" cy="5" r="2"/></g></svg>
+                              </span>
+                              
+                              Réseau
+                            </dt>
+                            <dd class="mt-2">Un réseau étendu de professionnels, de partenaires et de talents.</dd>
+                          </div>
+                          <div class="relative ">
+                            <dt class="font-semibold text-gray-900">
+                             
+                            <span class="mb-3  flex w-fit shrink-0 rounded-full border border-sky-300 bg-sky-100 p-2 dark:border-sky-300/10 dark:bg-sky-400/10">
+                                <svg class="size-6 text-sky-600 dark:text-sky-500" 
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path fill="currentColor" d="m250.73 109.69l-25.53-51a12 12 0 0 0-16.1-5.37l-26.22 13.06L129 52.14a3.9 3.9 0 0 0-2 0L73.12 66.38L46.9 53.27a12 12 0 0 0-16.1 5.37L5.27 109.69a12 12 0 0 0 5.37 16.1l27.29 13.65l55.75 39.82a3.9 3.9 0 0 0 1.35.62l64 16a4 4 0 0 0 3.8-1l55.54-55.54l27-13.5a12 12 0 0 0 5.37-16.1Zm-51 36.95l-37.2-29.8a4 4 0 0 0-5.34.3c-19.49 19.64-41.34 17.11-55.29 8.2a4.07 4.07 0 0 1-1.85-3a3.91 3.91 0 0 1 1.11-3.21L145.62 76h35.91l29.6 59.21ZM12.21 116.32a4 4 0 0 1 .22-3L38 62.22A4 4 0 0 1 41.54 60a4 4 0 0 1 1.78.43l24 12l-29.11 58.21l-24-12a4 4 0 0 1-2-2.32m146.56 71.25L97.71 172.3l-52.6-37.57L75.45 74L128 60.14L157.72 68H144a4 4 0 0 0-2.79 1.13l-45.7 44.33a12 12 0 0 0 2.06 18.62c19.88 12.71 44.13 10 62.66-6.81L194 152.33Zm85-71.25a4 4 0 0 1-2 2.32l-24 12l-29.09-58.21l24-12a4 4 0 0 1 5.32 1.79l25.53 51.05a4 4 0 0 1 .26 3.05ZM127.94 217a4 4 0 0 1-3.88 3a4 4 0 0 1-1-.12l-41.68-10.43a4 4 0 0 1-1.36-.62L53.68 190a4 4 0 0 1 4.65-6.51l25.72 18.37l41 10.25a4 4 0 0 1 2.89 4.89"/></svg>
+                            </span>
+                            
+                            Engagement
+                            </dt>
+                            <dd class="mt-2">Un engagement envers l'intégrité et la confidentialité.</dd>
+                          </div>
+                          
+                        </dl>
+                      </div>
+                  </div>
+                  
+
+
+                <div class="mx-auto max-w-7xl  mt-24 sm:mt-32 lg:mt-40">
+                    <div class="mx-auto max-w-2xl lg:max-w-none">
+                        <div class="max-w-3xl" style="opacity: 1; transform: none;">
+                            <h2>
+                                <span class="block text-base/8 font-semibold text-sky-600 mb-3">Nos
+                                    Services</span>
+                                <span class="sr-only"> - </span>
+                                <span
+                                    class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">We
+                                    help you identify, explore and respond to new opportunities.</span>
+                            </h2>
+                            <div class="mt-6 text-xl text-neutral-600">
+                                <p>Notre marché cible comprend les entreprises de toutes tailles, les entrepreneurs,
+                                    ainsi que les professionnels libéraux soucieux de gérer efficacement leurs finances
+                                    et de recruter les meilleurs talents pour leur organisation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative bg-white mx-auto max-w-7xl  mt-24">
+                    <div class="mx-auto max-w-2xl lg:max-w-none">
+                        <div class="w-full lg:flex lg:items-center lg:justify-end gap-x-8">
+                            <div class="w-full flex flex-col justify-between items-center ">
+                                 <div class="">
+                                <div class="w-[33.75rem] flex-none lg:w-[45rem]" style="opacity: 1; transform: none;">
+                                    
+                                    <div
+                                        class="justify-center lg:justify-end relative flex aspect-719/680 w-full ">
+                                        
+                                                                                    <svg viewBox="0 0 655 680" fill="none" class="h-full">
+                                            <g clip-path="url(#:S1:-clip)" class="group">
+                                                <g
+                                                    class="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
+                                                    <foreignObject width="655" height="680">
+                                                        <img alt="" loading="lazy"
+                                                            width="2400" height="3000" decoding="async" data-nimg="1"
+                                                            class="w-full bg-neutral-100 object-cover grayscale"
+                                                            sizes="(min-width: 1024px) 41rem, 31rem"
+                                                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80"
+                                                            style="color: transparent; aspect-ratio: 655 / 680;">
+                                                            <div class="flex mx-auto max-w-7xl px-6 justify-center items-center flex-col 
+                                                            gap-y-4 absolute text-white/95" style=" top: 50%;
+                                                            left: 50%;
+                                                            transform: translate(-60%, -60%);">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="currentColor" d="m6 16.5l-3 2.94V11h3m5 3.66l-1.57-1.34L8 14.64V7h3m5 6l-3 3V3h3m2.81 9.81L17 11h5v5l-1.79-1.79L13 21.36l-3.47-3.02L5.75 22H3l6.47-6.34L13 18.64"/></svg>
+                                                            <h3 class="text-3xl font-semibold">Finance</h3>
+                                                            </div>
+                                                    </foreignObject>
+                                                </g>
+                                                <use href="#:S1:-shape" stroke-width="2" class="stroke-neutral-950/10">
+                                                </use>
+                                            </g>
+                                            <defs>
+                                                <clipPath id=":S1:-clip">
+                                                    <path id=":S1:-shape"
+                                                        d="M537.827 9.245A11.5 11.5 0 0 1 549.104 0h63.366c7.257 0 12.7 6.64 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 586.87 151h-28.275a15.999 15.999 0 0 0-15.689 12.862l-59.4 297c-1.98 9.901 5.592 19.138 15.689 19.138h17.275l.127.001c.85.009 1.701.074 2.549.009 11.329-.874 21.411-7.529 24.88-25.981.002-.012.016-.016.023-.007.008.009.022.005.024-.006l24.754-123.771A11.5 11.5 0 0 1 580.104 321h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 617.87 472H559c-22.866 0-28.984 7.98-31.989 25.931-.004.026-.037.035-.052.014-.015-.02-.048-.013-.053.012l-24.759 123.798A11.5 11.5 0 0 1 490.87 631h-29.132a14.953 14.953 0 0 0-14.664 12.021c-4.3 21.502-23.18 36.979-45.107 36.979H83.502c-29.028 0-50.8-26.557-45.107-55.021l102.4-512C145.096 91.477 163.975 76 185.902 76h318.465c10.136 0 21.179-5.35 23.167-15.288l10.293-51.467Zm-512 160A11.5 11.5 0 0 1 37.104 160h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 74.87 311H11.504c-7.257 0-12.7-6.639-11.277-13.755l25.6-128Z"
+                                                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                </div>
+                            </div> 
+                            </div>
+                            
+                            <div>
+                                <ul role="list"
+                                    class="text-base text-neutral-600 mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Restructuration du département financier.
+                                                </strong>nous vous accompagnons dans la transformation de votre département. Notre approche globale couvre l’analyse de vos processus, la conception de nouveaux modèles organisationnels et l’implémentation d’outils digitaux.</div>
+                                        </div>
+                                    </li>
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Planification financière et fiscale.
+                                                </strong>Nous optimisons vos flux de trésorerie, réduisons votre charge fiscale et vous aidons à prendre des décisions stratégiques pour assurer la pérennité de votre activité. Grâce à une approche personnalisée, nous vous proposons des solutions adaptées à vos besoins spécifiques</div>
+                                        </div>
+                                    </li>
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Mise en place d’un business plan.</strong>
+                                                Forts d’une expertise sectorielle pointue, nos consultants vous aident à définir votre stratégie, à analyser votre marché, à élaborer votre modèle économique et à mettre en place votre business plan. Nous mettons à votre disposition notre réseau d’experts et d’investisseurs pour vous aider à concrétiser vos ambitions.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Évaluation et gestion des risques financiers. </strong>En identifiant les opportunités et en maîtrisant les risques, nous vous aidons à optimiser votre rentabilité et à renforcer votre compétitivité.</div>
+                                        </div>
+                                    </li>
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Mise en place d’un manuel de procédure. </strong>Notre service consiste à analyser vos processus existants, à les formaliser dans un document clair et accessible, et à former vos équipes à son utilisation. Ce manuel deviendra votre référence pour une gestion efficace et cohérente de vos activités.</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- rh section -->
+                <div class="relative bg-white mx-auto max-w-7xl  mt-24">
+                    <div class="mx-auto max-w-2xl lg:max-w-none">
+                        <div class="lg:flex lg:items-center lg:justify-end">
+
+                            <div class="w-full flex flex-col justify-between items-center gap-y-8 sm:hidden">
+                              
+                                <div class="flex justify-center  lg:justify-end lg:pr-12 w-full">
+                                    <div class="w-[33.75rem] flex-none lg:w-[45rem]" style="opacity: 1; transform: none;">
+                                    <div
+                                        class="justify-center lg:justify-end relative flex aspect-719/680 w-full ">
+                                        <svg viewBox="0 0 655 680" fill="none" class="h-full">
+                                            <g clip-path="url(#:S1:-clip)" class="group">
+                                                <g
+                                                    class="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
+                                                    
+                                                    <foreignObject width="655" height="680">
+                                                        <img alt="" loading="lazy"
+                                                            width="2400" height="3000" decoding="async" data-nimg="1"
+                                                            class="w-full bg-neutral-100 object-cover grayscale"
+                                                            sizes="(min-width: 1024px) 41rem, 31rem"
+                                                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80"
+                                                            style="color: transparent; aspect-ratio: 655 / 680;">
+                                                        <div class="flex mx-auto max-w-7xl px-6 justify-center items-center flex-col 
+                                                        gap-y-4 absolute text-white/95" style=" top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-60%, -60%);">
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="2.5"/><path d="M7 4.5v-4m2.5 13V12h2a1 1 0 0 0 1-1V7a5.5 5.5 0 0 0-3-4.9m-5 0a5.5 5.5 0 0 0 0 9.8v1.6"/></g></svg>                                    
+                                                            <h3 class="text-3xl font-semibold">Capital Humain</h3>
+                                                        </div>
+                                                    </foreignObject>
+                                                </g>
+                                                <use href="#:S1:-shape" stroke-width="2" class="stroke-neutral-950/10">
+                                                </use>
+                                            </g>
+                                            <defs>
+                                                <clipPath id=":S1:-clip">
+                                                    <path id=":S1:-shape"
+                                                        d="M537.827 9.245A11.5 11.5 0 0 1 549.104 0h63.366c7.257 0 12.7 6.64 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 586.87 151h-28.275a15.999 15.999 0 0 0-15.689 12.862l-59.4 297c-1.98 9.901 5.592 19.138 15.689 19.138h17.275l.127.001c.85.009 1.701.074 2.549.009 11.329-.874 21.411-7.529 24.88-25.981.002-.012.016-.016.023-.007.008.009.022.005.024-.006l24.754-123.771A11.5 11.5 0 0 1 580.104 321h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 617.87 472H559c-22.866 0-28.984 7.98-31.989 25.931-.004.026-.037.035-.052.014-.015-.02-.048-.013-.053.012l-24.759 123.798A11.5 11.5 0 0 1 490.87 631h-29.132a14.953 14.953 0 0 0-14.664 12.021c-4.3 21.502-23.18 36.979-45.107 36.979H83.502c-29.028 0-50.8-26.557-45.107-55.021l102.4-512C145.096 91.477 163.975 76 185.902 76h318.465c10.136 0 21.179-5.35 23.167-15.288l10.293-51.467Zm-512 160A11.5 11.5 0 0 1 37.104 160h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 74.87 311H11.504c-7.257 0-12.7-6.639-11.277-13.755l25.6-128Z"
+                                                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                </div>
+                                </div>
+                              
+                            </div>
+                           
+                            <div>
+                                <ul role="list"
+                                    class="text-base text-neutral-600 mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Identification et sélection des talents.
+                                                </strong>
+                                                Notre cabinet vous accompagne dans l’identification et la sélection des meilleurs talents pour votre entreprise. Grâce à des méthodes d’évaluation rigoureuses et personnalisées, nous vous aidons à trouver les candidats dont les compétences et le potentiel correspondent parfaitement à vos besoins.</div>
+                                        </div>
+                                    </li>
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Formations et développement RH.
+                                                </strong>Notre accompagnement ne se limite pas à la simple transmission de connaissances. Nous vous proposons un suivi personnalisé pour favoriser l’intégration des apprentissages et le développement des compétences tout au long de la carrière de vos collaborateurs.</div>
+                                        </div>
+                                    </li>
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Développement de stratégies de recrutement.</strong>
+                                                Notre cabinet vous accompagne dans la conception et la mise en œuvre de stratégies de recrutement sur mesure. Nous vous aidons à optimiser vos processus de recrutement, à renforcer votre attractivité employeur et à attirer les meilleurs profils pour répondre à vos besoins.
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="group mt-10 first:mt-0">
+                                        <div style="opacity: 1; transform: none;">
+                                            <div
+                                                class="pt-10 group-first:pt-0 group-first:before:hidden group-first:after:hidden relative before:absolute after:absolute before:bg-neutral-950 after:bg-neutral-950/10 before:top-0 before:left-0 before:h-px before:w-6 after:top-0 after:right-0 after:left-8 after:h-px">
+                                                <strong class="font-semibold text-neutral-950">Accompagnement dans l'intégration des nouveaux employés. </strong>
+                                                Notre cabinet vous propose un accompagnement personnalisé pour faciliter l’intégration de vos nouveaux collaborateurs. Une intégration réussie est essentielle pour favoriser leur rapidité d’adaptation, leur fidélisation et leur performance au sein de votre entreprise.</div>
+                                        </div>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                            <div class="w-full sm:flex flex-col justify-between items-center gap-y-8 hidden">
+                              
+                                <div class="flex justify-center  lg:justify-end lg:pr-12 w-full">
+                                    <div class="w-[33.75rem] flex-none lg:w-[45rem]" style="opacity: 1; transform: none;">
+                                    <div
+                                        class="justify-center lg:justify-end relative flex aspect-719/680 w-full ">
+                                        <svg viewBox="0 0 655 680" fill="none" class="h-full">
+                                            <g clip-path="url(#:S1:-clip)" class="group">
+                                                <g
+                                                    class="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
+                                                    
+                                                    <foreignObject width="655" height="680">
+                                                        <img alt="" loading="lazy"
+                                                            width="2400" height="3000" decoding="async" data-nimg="1"
+                                                            class="w-full bg-neutral-100 object-cover grayscale"
+                                                            sizes="(min-width: 1024px) 41rem, 31rem"
+                                                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80"
+                                                            style="color: transparent; aspect-ratio: 655 / 680;">
+                                                        <div class="flex mx-auto max-w-7xl px-6 justify-center items-center flex-col 
+                                                        gap-y-4 absolute text-white/95" style=" top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-60%, -60%);">
+                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="7" r="2.5"/><path d="M7 4.5v-4m2.5 13V12h2a1 1 0 0 0 1-1V7a5.5 5.5 0 0 0-3-4.9m-5 0a5.5 5.5 0 0 0 0 9.8v1.6"/></g></svg>                                    
+                                                            <h3 class="text-3xl font-semibold">Capital Humain</h3>
+                                                        </div>
+                                                    </foreignObject>
+                                                </g>
+                                                <use href="#:S1:-shape" stroke-width="2" class="stroke-neutral-950/10">
+                                                </use>
+                                            </g>
+                                            <defs>
+                                                <clipPath id=":S1:-clip">
+                                                    <path id=":S1:-shape"
+                                                        d="M537.827 9.245A11.5 11.5 0 0 1 549.104 0h63.366c7.257 0 12.7 6.64 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 586.87 151h-28.275a15.999 15.999 0 0 0-15.689 12.862l-59.4 297c-1.98 9.901 5.592 19.138 15.689 19.138h17.275l.127.001c.85.009 1.701.074 2.549.009 11.329-.874 21.411-7.529 24.88-25.981.002-.012.016-.016.023-.007.008.009.022.005.024-.006l24.754-123.771A11.5 11.5 0 0 1 580.104 321h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 617.87 472H559c-22.866 0-28.984 7.98-31.989 25.931-.004.026-.037.035-.052.014-.015-.02-.048-.013-.053.012l-24.759 123.798A11.5 11.5 0 0 1 490.87 631h-29.132a14.953 14.953 0 0 0-14.664 12.021c-4.3 21.502-23.18 36.979-45.107 36.979H83.502c-29.028 0-50.8-26.557-45.107-55.021l102.4-512C145.096 91.477 163.975 76 185.902 76h318.465c10.136 0 21.179-5.35 23.167-15.288l10.293-51.467Zm-512 160A11.5 11.5 0 0 1 37.104 160h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 74.87 311H11.504c-7.257 0-12.7-6.639-11.277-13.755l25.6-128Z"
+                                                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                                                </clipPath>
+                                            </defs>
+                                        </svg></div>
+                                </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trusted us -->
+                <div class="relative bg-white mx-auto max-w-7xl  mt-24 sm:mt-32 md:mt-56" id="stats-section">
+                    <img class="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2 grayscale" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80" alt="">
+                    <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
+                      <div class="px-6 pt-16 pb-24 sm:pt-20 sm:pb-32 lg:col-start-2 lg:px-8 lg:pt-32">
+                        <div class="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
+                          <h2 class="text-base/8 font-semibold text-sky-600">Our track record</h2>
+                          <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Ils nous ont fait confiance.</p>
+                          <p class="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                          <dl class="mt-16 grid max-w-xl grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 xl:mt-16">
+                            <div class="flex flex-col gap-y-3 border-l  pl-6 border-sky-600">
+                              <dt class="text-sm/6 text-gray-600">Clients Satisfaits</dt>
+                              <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">
+                                <span data-target="75">0</span>
+                            </dd>
+                            </div>
+                            <div class="flex flex-col gap-y-3 border-l  pl-6 border-sky-600">
+                              <dt class="text-sm/6 text-gray-600">Projets réalisés</dt>
+                              <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">
+                                <span data-target="180">0</span>
+                            </dd>
+                            </div>
+                            <div class="flex flex-col gap-y-3 border-l pl-6 border-sky-600">
+                              <dt class="text-sm/6 text-gray-600">Ans d'expériences</dt>
+                              <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900">
+                                <span data-target="15">0</span>
+                            </dd>
+                            </div>
+                          </dl>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- logos -->
+
+                  <div class="relative bg-white mx-auto max-w-7xl px-6 lg:px-0 mt-24 ">
+                    
+                      <div class="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 sm:rounded-2xl md:grid-cols-3">
+                        <div class="bg-gray-400/5 p-8 sm:p-10">
+                          <img class="max-h-12 w-full object-contain" src="https://tailwindui.com/plus-assets/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48">
+                        </div>
+                        <div class="bg-gray-400/5 p-6 sm:p-10">
+                          <img class="max-h-12 w-full object-contain" src="https://tailwindui.com/plus-assets/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
+                        </div>
+                        <div class="bg-gray-400/5 p-6 sm:p-10">
+                          <img class="max-h-12 w-full object-contain" src="https://tailwindui.com/plus-assets/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
+                        </div>
+                        <div class="bg-gray-400/5 p-6 sm:p-10">
+                          <img class="max-h-12 w-full object-contain" src="https://tailwindui.com/plus-assets/img/logos/158x48/laravel-logo-gray-900.svg" alt="Laravel" width="158" height="48">
+                        </div>
+                        <div class="bg-gray-400/5 p-6 sm:p-10">
+                          <img class="max-h-12 w-full object-contain" src="https://tailwindui.com/plus-assets/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48">
+                        </div>
+                        <div class="bg-gray-400/5 p-6 sm:p-10">
+                          <img class="max-h-12 w-full object-contain" src="https://tailwindui.com/plus-assets/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
+                        </div>
+                      </div>
+                   
+                  </div>
+                  
+
+
+
+                  <!-- contact us -->
+
+                  <div class="relative bg-white mx-auto max-w-7xl  mt-24 sm:mt-32 md:mt-56" id="contact-us">
+                    <div class="">
+                      <div class="mx-auto max-w-2xl lg:mx-0">
+                        <h2 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Let’s talk about your project</h2>
+                        <p class="mt-6 text-lg/8 text-gray-600">We help companies and individuals build out their brand guidelines.
+
+                        </p>
+                      </div>
+                      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
+                        <div>
+                          <h3 class="border-l border-sky-600 pl-6 font-semibold text-gray-900">                        Email                        </h3>
+                          <a class="border-l border-gray-200 pt-2 pl-6 text-gray-600 not-italic"
+                          href="mailto:mk@makassociates.ma"
+                          target="_blank"
+                          >
+                            mk@makassociates.ma
+                        </a>
+                        </div>
+
+                
+                        <div>
+                            <h3 class="border-l border-sky-600 pl-6 font-semibold text-gray-900">                        Mobile                        </h3>
+                            <a class="border-l border-gray-200 pt-2 pl-6 text-gray-600 not-italic"
+                          href="call:+212662653377"
+                          target="_blank"
+                          >
+                                (+212)-662653377
+                        </a>
+                        </div>
+                        <div>
+                            <h3 class="border-l border-sky-600 pl-6 font-semibold text-gray-900">                        WhatsApp                        </h3>
+                          <a class="border-l border-gray-200 pt-2 pl-6 text-gray-600 not-italic"
+                          href="https://api.whatsapp.com/send/?phone=212662653377&text&type=phone_number&app_absent=0"
+                          target="_blank"
+                          >
+                          (+212)-662653377
+                          </a>
+                        </div>
+                        <div>
+                            <h3 class="border-l border-sky-600 pl-6 font-semibold text-gray-900">                        Linkedin                        </h3>
+                            <a class="border-l border-gray-200 pt-2 pl-6 text-gray-600 not-italic"
+                            href="https://www.linkedin.com/in/khans%C3%A2a-makayssi-phd-5071aa102/"
+                            target="_blank"
+                            >
+                            Dr. Khansâa Makayssi
+                        </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+            </main>
+
+            <footer>
+
+                <div class="relative bg-white mx-auto max-w-7xl  mt-24 sm:mt-32 md:mt-56">
+                    <div class="mt-12 border-t border-gray-900/10 pt-8 md:flex md:items-center md:justify-between">
+                        <div class="flex gap-x-6 md:order-2">
+                          <a href="#" class="text-gray-600 hover:text-gray-800">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                            </svg>
+                          </a>
+                          <a href="#" class="text-gray-600 hover:text-gray-800">
+                            <span class="sr-only">Instagram</span>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                            </svg>
+                          </a>
+                          <a href="#" class="text-gray-600 hover:text-gray-800">
+                            <span class="sr-only">X</span>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
+                            </svg>
+                          </a>
+                          <a href="#" class="text-gray-600 hover:text-gray-800">
+                            <span class="sr-only">YouTube</span>
+                            <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd" />
+                            </svg>
+                          </a>
+                        </div>
+                        <p class="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">&copy; 2025 <b>M</b>ak <b>A</b>ssociates, Inc. All rights reserved.</p>
+                      </div>
+                    </div>
+                </div>
+
+
+            </footer>
+        </div>
+
+    </div>
+
+
+      
+</div>
+
+
+    <script>
+        function animateCounter(element, target) {
+            let count = 0;
+            let speed = target / 100; // Adjust speed based on target value
+
+            function updateCount() {
+                count += speed;
+                if (count >= target) {
+                    element.innerText = `+${target}`;
+                } else {
+                    element.innerText = `+${Math.floor(count)}`;
+                    requestAnimationFrame(updateCount);
+                }
+            }
+            updateCount();
+        }
+
+        function startCounting(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.querySelectorAll("[data-target]").forEach(stat => {
+                        const target = parseInt(stat.getAttribute("data-target"));
+                        if (!stat.dataset.counted) { // Prevent re-triggering
+                            animateCounter(stat, target);
+                            stat.dataset.counted = "true"; // Mark as counted
+                        }
+                    });
+                    observer.disconnect(); // Stop observing after animation
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(startCounting, { threshold: 0.5 });
+        observer.observe(document.getElementById("stats-section"));
+
+
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            function createBlock(x, y, isHovered = false) {
+                let path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                path.setAttribute(
+                    "transform",
+                    `translate(${-32 * y + 96 * x} ${160 * y})`
+                );
+                path.setAttribute(
+                    "d",
+                    "M45.119 4.5a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C6.82 148.861 12.262 155.5 19.52 155.5h63.366a11.5 11.5 0 0 0 11.277-9.245l25.6-128c1.423-7.116-4.02-13.755-11.277-13.755H45.119Z"
+                );
+
+                if (isHovered) {
+                    path.style.opacity = 0;
+                    path.animate([{ opacity: 1 }, { opacity: 0 }], {
+                        duration: 1000,
+                        easing: "ease-in-out",
+                    }).onfinish = function () {
+                        path.remove();
+                    };
+                }
+
+                return path;
+            }
+
+            function createGridPattern(yOffset = 0, interactive = false) {
+                let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("aria-hidden", "true");
+                svg.setAttribute("width", "100%");
+                svg.setAttribute("height", "100%"); 
+                svg.setAttribute("fill", "#f1f1f1"); 
+                svg.style.position = "absolute";
+svg.style.left = "0";
+svg.style.right = "0";
+svg.style.top = "-56px"; // -top-14 (14 * 4px)
+svg.style.zIndex = "-10"; // Push behind content
+svg.style.width = "100%";
+svg.style.height = "1000px";
+svg.style.fill = "rgb(250, 250, 250)"; // Equivalent to neutral-50
+svg.style.maskImage = "linear-gradient(to bottom left, white 40%, transparent 50%)";
+svg.style.webkitMaskImage = "linear-gradient(to bottom left, white 40%, transparent 50%)"; // Safari support
+
+
+
+
+                 
+
+                let rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                rect.setAttribute("width", "100%");
+                rect.setAttribute("height", "100%");
+                rect.setAttribute("fill", "#FFFFFF");
+                rect.setAttribute("stroke-width", "0");
+                rect.setAttribute("stroke", "rgb(10, 10, 10)"); // Approximate neutral-950
+rect.setAttribute("stroke-opacity", "0.05"); // 5% opacity
+rect.setAttribute("stroke-width", "2"); // Optional: Adjust thickness
+
+                let patternContainer = document.createElementNS(
+                    "http://www.w3.org/2000/svg",
+                    "svg"
+                );
+                patternContainer.setAttribute("x", "50%");
+                patternContainer.setAttribute("y", yOffset);
+                patternContainer.setAttribute("stroke-width", "0");
+                patternContainer.classList.add("overflow-visible");
+
+                let staticBlocks = [
+                    [1, 1],
+                    [2, 2],
+                    [4, 3],
+                    [6, 2],
+                    [7, 4],
+                    [5, 5],
+                ];
+
+                staticBlocks.forEach(([x, y]) => {
+                    patternContainer.appendChild(createBlock(x, y));
+                });
+
+                svg.appendChild(rect);
+                svg.appendChild(patternContainer);
+                document.getElementById("grid-container").appendChild(svg);
+
+                if (interactive) {
+                    let hoveredBlocks = new Set();
+
+                    function onMouseMove(event) {
+                        let svgRect = svg.getBoundingClientRect();
+                        let x = event.clientX - svgRect.left;
+                        let y = event.clientY - svgRect.top;
+                        if (x < 0 || y < 0 || x > svgRect.width || y > svgRect.height) {
+                            return;
+                        }
+
+                        x = x - svgRect.width / 2 - 32;
+                        y = y - yOffset;
+                        x += Math.tan(32 / 160) * y;
+                        x = Math.floor(x / 96);
+                        y = Math.floor(y / 160);
+
+                        let blockKey = `${x},${y}`;
+                        if (hoveredBlocks.has(blockKey)) {
+                            return;
+                        }
+
+                        hoveredBlocks.add(blockKey);
+                        let newBlock = createBlock(x, y, true);
+                        patternContainer.appendChild(newBlock);
+                        setTimeout(() => hoveredBlocks.delete(blockKey), 1000);
+                    }
+
+                    window.addEventListener("mousemove", onMouseMove);
+                }
+            }
+
+            // Initialize the grid pattern inside the container
+            createGridPattern(-96, true);
+        });
+    
+
+
+
+        
+    </script>
+</body>
+
+</html>
